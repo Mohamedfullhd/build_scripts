@@ -21,6 +21,6 @@ export BUILD_HOSTNAME=crave
 
 #build
 source build/envsetup.sh
-lunch lineage_gale-ap2a-userdebug || lunch lineage_gale-ap2a-eng || lunch lineage_gale-bp1a-userdebug || lunch lineage_gale-ap4a-userdebug
+lunch  2by2_gale-userdebug || 2by2_gale-ap4a-userdebug || 2by2_gale-ap2a-userdebug || lunch 2by2_gale-ap2a-eng || lunch 2by2_gale-bp1a-userdebug
 m installclean
 m bacon
