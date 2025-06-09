@@ -18,7 +18,9 @@ git clone https://github.com/shravansayz/private_keys.git -b rise vendor/lineage
 
 export BUILD_USERNAME=Mohamed
 export BUILD_HOSTNAME=crave
-
+export SKIP_ABI_CHECKS=true 
+export allow_undefined_symbols=true
+export check_elf_symbols=false
 #build
 source build/envsetup.sh
 riseup gale userdebug || riseup gale ap4a userdebug || riseup gale bp1a userdebug
