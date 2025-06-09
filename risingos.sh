@@ -23,5 +23,9 @@ export allow_undefined_symbols=true
 export check_elf_symbols=false
 #build
 source build/envsetup.sh
+
+# Lunch
+lunch lineage_gale-userdebug || lunch lineage_gale-ap3a-userdebug || lunch lineage_gale-ap2a-userdebug
+
 riseup gale userdebug || riseup gale ap4a userdebug || riseup gale bp1a userdebug
 rise b
