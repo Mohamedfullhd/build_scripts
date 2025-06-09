@@ -21,5 +21,5 @@ export BUILD_HOSTNAME=crave
 
 #build
 source build/envsetup.sh
-riseup gale bp1a userdebug || riseup gale ap4a userdebug
+riseup gale userdebug || riseup gale ap4a userdebug || riseup gale bp1a userdebug
 rise b
