@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests
 
 # Initialize repo with specified manifest
-repo init -u https://github.com/GenesisOS/manifest.git -b verve --git-lfs
+repo init -u https://github.com/GenesisOS/manifest.git -b verve-qpr2 --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/shravansayz/local_manifests.git --depth 1 -b genesis .repo/local_manifests
