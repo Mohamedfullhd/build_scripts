@@ -23,6 +23,7 @@ export check_elf_symbols=false
 
 # Set up build environment
 source build/envsetup.sh
-breakfast gale
+lunch genesis_gale-userdebug || lunch genesis_gale-ap3a-userdebug || lunch genesis_gale-ap2a-userdebug
+breakfast genesis_gale
 make installclean
 mka genesis
