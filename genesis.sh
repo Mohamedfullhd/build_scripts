@@ -7,8 +7,7 @@ rm -rf .repo/local_manifests
 repo init -u https://github.com/GenesisOS/manifest.git -b verve-qpr2 --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/shravansayz/local_manifests.git --depth 1 -b genesis .repo/local_manifests
-
+git clone https://github.com/Mohamedfullhd/Build-.git .repo/local_manifests
 # Sync the repositories
 /opt/crave/resync.sh
 
@@ -16,11 +15,14 @@ git clone https://github.com/shravansayz/local_manifests.git --depth 1 -b genesi
 rm -rf vendor/genesis/signing
 git clone https://github.com/shravansayz/private_keys.git -b rise vendor/genesis/signing
 
-export BUILD_USERNAME=shravan
+export BUILD_USERNAME=Mohamed
 export BUILD_HOSTNAME=crave
+export SKIP_ABI_CHECKS=true 
+export allow_undefined_symbols=true
+export check_elf_symbols=false
 
 # Set up build environment
 source build/envsetup.sh
-breakfast RMX1901
+breakfast gale
 make installclean
 mka genesis
